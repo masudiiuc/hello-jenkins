@@ -1,6 +1,6 @@
 #!/bin/sh
  
-ssh -T app@104.236.156.53 <<EOF
+ssh -o StrictHostKeyChecking=no -T app@104.236.156.53 <<EOF
   cd ~/hello-jenkins
   git pull
   npm install --production
